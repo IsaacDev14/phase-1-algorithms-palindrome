@@ -11,8 +11,19 @@ function isPalindrome(word) {
 */
 
 // You can run `node index.js` to view these console logs
+
+function isPalindrome(word) {
+  // Reverse the word
+  const PalindromeWord = word.split("").reverse().join("");
+
+  // Check if the original word is the same as the reversed word
+  return word === PalindromeWord;
+} 
+
+
 if (require.main === module) {
   // add your own custom tests in here
+
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
